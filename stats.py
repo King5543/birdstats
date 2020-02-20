@@ -14,7 +14,6 @@ class GoogleTrendAnalyzer:
             self.headers = reader.__next__()
             for row in reader:
                 self.table.append(row)
-                print(self.table)
 
     def most_popular(self):
 
