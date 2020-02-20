@@ -9,12 +9,12 @@ class GoogleTrendAnalyzer:
         self.headers = []
         with open(filename, 'r') as f:
             self.title = f.readline().strip()
-            print(self.title)
             f.readline()
             reader = csv.reader(f)
             self.headers = reader.__next__()
             for row in reader:
                 self.table.append(row)
+                print(self.table)
 
     def most_popular(self):
 
